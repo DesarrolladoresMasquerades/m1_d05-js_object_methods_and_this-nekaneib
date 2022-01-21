@@ -15,6 +15,7 @@ const chuck = {
       );
     },
     getAge: function() {
+      return Math.floor((new Date - this.birthDate)/31536000000)
       // TODO: return the age in this function
       // Hint: to get the current time, you can do: new Date()
       // Hint: to get the birthDate, you can do: this.birthDate
@@ -29,7 +30,8 @@ const chuck = {
       // TODO. return a random friend name from the friends array
     }
   };
-  
+
+
   chuck.displayInfo();
   
   console.log('getAge', chuck.getAge()); // Should return 81 if you are in 2021
